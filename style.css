@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    margin-bottom: 15px;
+    padding: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+span {
+  color: red;
+}
+.bizu {
+  font-weight: bold;
+  color: blueviolet;
+}
+.h1 {
+  font-size: 25px;
+}
+.h2 {
+  font-size: 24px;
+}
+.h3 {
+  font-size: 23px;
+}
+.h4 {
+  font-size: 22px;
+}
+.h5 {
+  font-size: 21px;
+}
+.h6 {
+  font-size: 20px;
+}
+.h7 {
+  font-size: 19px;
+}
+.h8 {
+  font-size: 18px;
+}
