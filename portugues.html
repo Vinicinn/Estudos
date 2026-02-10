@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <button
+      style="position: absolute; right: 10px; top: 5px"
+      onclick="
+        document.querySelectorAll('details').forEach((d) => (d.open = true))
+      "
+    >
+      abrir tudo
+    </button>
+    <button
+      style="position: absolute; right: 10px; top: 30px"
+      onclick="
+        document.querySelectorAll('details').forEach((d) => (d.open = false))
+      "
+    >
+      fechar tudo
+    </button>
     <details>
       <summary class="h1">FONOLOGIA</summary>
       <p>Estudo dos sons da língua portuguesa.</p>
@@ -203,7 +219,7 @@
           <p class="ex">ele se viu no espelho.</p>
         </details>
 
-        <details style="margin-left: 10px;">
+        <details style="margin-left: 10px">
           <summary class="h3">modo e tempo verbal</summary>
           <p class="h4">indicativo</p>
           <p>certeza, fato, realidade</p>
