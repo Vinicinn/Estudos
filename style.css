@@ -1,15 +1,19 @@
 * {
-    margin: 0px;
-    margin-bottom: 15px;
+    margin: 0px 0px 10px 5px;
     padding: 0px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
 span {
   color: red;
 }
 .bizu {
   font-weight: bold;
   color: blueviolet;
+}
+.ex{
+  font-style: italic;
+  color: green;
 }
 .h1 {
   font-size: 25px;
