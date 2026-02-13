@@ -1,7 +1,8 @@
 * {
     margin: 0px 0px 10px 5px;
     padding: 0px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: lightgrey;
 }
 span {
   color: red;
@@ -16,7 +17,9 @@ u {
 .ex{
   font-style: italic;
   color: green;
-  
+}
+.anotacao {
+  color: yellow;
 }
 .h1 {
   font-size: 25px;
