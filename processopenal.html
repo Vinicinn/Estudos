@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Processo Penal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button
+      style="position: absolute; right: 10px; top: 5px; padding: 3px"
+      onclick="window.history.back()"
+    >
+      Voltar
+    </button>
+    <button
+      style="position: absolute; right: 10px; top: 30px; padding: 3px"
+      onclick="
+        document.querySelectorAll('details').forEach((d) => (d.open = true))
+      "
+    >
+      abrir tudo
+    </button>
+    <button
+      style="position: absolute; right: 10px; top: 55px; padding: 3px"
+      onclick="
+        document.querySelectorAll('details').forEach((d) => (d.open = false))
+      "
+    >
+      fechar tudo
+    </button>
+    <details>
+      <summary class="h1">INQUÉRITO POLICIAL</summary>
+      <p class="anotacao">
+        nao é parte do processo penal <br />
+        procedimento investigativo de natureza administrativa <br />
+        pré-processual <br />
+        combustivel da denuncia quando não dispensado <br />
+        por ser investigativo e inquisitivo, não tem contraditório e ampla
+        defesa <br />
+        presidido por autoridade policial (delegado de policia [delta] da PF ou
+        da PC)
+      </p>
+      <p class="stf">
+        Súmula Vinculante 14: É direito do defensor, no interesse do
+        representado, ter acesso amplo aos elementos de prova que, já
+        documentados em procedimento investigatório realizado por órgão com
+        competência de polícia judiciária, digam respeito ao exercício do
+        direito de defesa.
+      </p>
+      <p class="bizu">
+        SEI DOIDO - SIGILOSO, ESCRITO, INDISPONIVEL, DISPENSAVEL, OFICIAL,
+        INQUISITIVO, DISCRICIONARIO, OFICIOSO
+      </p>
+      <p class="h2">
+        Art. 9º Todas as peças do inquérito policial serão, num só processado,
+        reduzidas a <span>escrito</span> ou datilografadas e, neste caso,
+        rubricadas pela autoridade.
+      </p>
+      <p class="bizu">ESCRITO</p>
+    </details>
+  </body>
+</html>

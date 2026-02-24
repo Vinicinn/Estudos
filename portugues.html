@@ -8,7 +8,13 @@
   </head>
   <body>
     <button
-      style="position: absolute; right: 10px; top: 5px"
+      style="position: absolute; right: 10px; top: 5px; padding: 3px"
+      onclick="window.history.back()"
+    >
+      Voltar
+    </button>
+    <button
+      style="position: absolute; right: 10px; top: 30px; padding: 3px"
       onclick="
         document.querySelectorAll('details').forEach((d) => (d.open = true))
       "
@@ -16,7 +22,7 @@
       abrir tudo
     </button>
     <button
-      style="position: absolute; right: 10px; top: 30px"
+      style="position: absolute; right: 10px; top: 55px; padding: 3px"
       onclick="
         document.querySelectorAll('details').forEach((d) => (d.open = false))
       "
@@ -25,13 +31,17 @@
     </button>
     <details>
       <summary class="h1">FONOLOGIA</summary>
+      <!-- FONOLOGIA -->
       <p>Estudo dos sons da língua portuguesa.</p>
 
-      <details style="margin-left: 10px">
+      <details>
         <summary class="h2">ACENTUAÇÃO GRÁFICA</summary>
+        <!-- ACENTUAÇÃO GRÁFICA -->
         <p>Estudo das regras de acentuação da língua portuguesa.</p>
+        <span>TIL NÃO É ACENTO </span>
         <details>
           <summary class="h3">Monossílabo tônico</summary>
+          <!-- Monossílabo tônico -->
           <p>Palavra de uma única sílaba</p>
           <p>Monossílabo tônico tem significado completo</p>
           <p>Terminadas em vogais -a, -e ou -o seguidas ou não de -s</p>
@@ -41,6 +51,7 @@
 
         <details>
           <summary class="h3">Oxítona</summary>
+          <!-- Oxítona -->
           <p>Palavra cuja última sílaba é a tônica</p>
           <p>
             Terminadas em vogais tônicas abertas -a, -e ou -o seguidas ou não de
@@ -62,6 +73,7 @@
 
         <details>
           <summary class="h3">Paroxítona</summary>
+          <!-- Paroxítona -->
           <p>Palavra cuja penúltima sílaba é a tônica</p>
           <p>Terminadas em -l, -n, -r, -x, -s, -ã, -ão, -ei, -um ou -uns</p>
           <p class="bizu">
@@ -76,9 +88,20 @@
 
         <details>
           <summary class="h3">Proparoxítona</summary>
+          <!-- Proparoxítona -->
           <p>Palavras cuja antepenúltima sílaba é a tônica</p>
           <p class="bizu">TODAS PROPAROXÍTONAS SÃO ACENTUADAS</p>
           <p class="ex">médico, pôneis, cômico, sútil</p>
+
+          <p class="h4">PROPAROXITONAS ACIDENTAIS/EVENTUAIS</p>
+          <p>
+            palavras paroxitonas terminadas em ditogos que tambem podem ser
+            consideradas proparoxitonas
+          </p>
+          <span>SEMPRE MARCAR PAROXITONA</span>
+          <p class="anotacao">
+            as bancas em 99% dos casos não cobra a proparoxitona acidental
+          </p>
         </details>
 
         <details>
@@ -124,7 +147,7 @@
         </details>
       </details>
 
-      <details style="margin-left: 10px">
+      <details>
         <summary class="h2">DITONGO</summary>
         <p>Encontro de uma vogal com uma semivogal na mesma sílaba</p>
         <p>vogal sempre vai ser a mais forte</p>
@@ -141,7 +164,7 @@
         <p class="bizu">ai, ei, oi, au, eu, ou</p>
       </details>
 
-      <details style="margin-left: 10px">
+      <details>
         <summary class="h2">HIATO</summary>
         <p>
           Duas vogais juntas numa palavra, cada uma pertencendo a uma<span
@@ -164,7 +187,7 @@
       </p>
       <p class="bizu">PICA</p>
 
-      <details style="margin-left: 10px">
+      <details>
         <summary class="h2">SUBSTANTIVO</summary>
         <p>
           Classe gramatical que nomeia seres, objetos, lugares, sentimentos,
@@ -178,13 +201,13 @@
         <p class="ex">Amor, Saudade, Resposta</p>
       </details>
 
-      <details style="margin-left: 10px">
+      <details>
         <summary class="h2">VERBO</summary>
         <p>
           Classe gramatical que exprime ação, estado (verbo de ligação), mudança
-          de estado, fenômeno da natureza podendo ser<span>conjugável</span>  
+          de estado, fenômeno da natureza podendo ser<span>conjugável</span>
         </p>
-        <details style="margin-left: 10px">
+        <details>
           <summary class="h3">Transitividade verbal</summary>
           <p>Estudo da relação entre o verbo e seus complementos.</p>
           <p class="h3"><span>In</span>transitivo</p>
@@ -206,14 +229,16 @@
             <span>de</span> que/quem? <span>em</span> quem? <span>a</span> quem?
             <span>com</span> quem?
           </p>
-          <p class="ex">Ele gosta<u><strong>de</strong> musica</u>.</p>
+          <p class="ex">
+            Ele gosta<u><strong>de</strong> musica</u>.
+          </p>
           <p class="h4">Bitransitivo</p>
           <p>Objeto direto e indireto</p>
           <p>o que a quem?</p>
           <p class="ex">Ele deu <u>um livro a ela.</u></p>
         </details>
 
-        <details style="margin-left: 10px">
+        <details>
           <summary class="h3">Verbo de ligação</summary>
           <p>Só quando tiver predicativo do sujeito</p>
           <p>
@@ -223,7 +248,7 @@
           <p class="ex">A prova <u>é</u> difícil.</p>
         </details>
 
-        <details style="margin-left: 10px">
+        <details>
           <summary class="h3">vozes verbais</summary>
           <p class="h4">ativa</p>
           <p>sujeito<span>pratica</span> a ação</p>
@@ -236,9 +261,9 @@
           <p class="ex">Ele se viu no espelho.</p>
         </details>
 
-        <details style="margin-left: 10px">
+        <details>
           <summary class="h3">modo e tempo verbal</summary>
-          <details style="margin-left: 10px">
+          <details>
             <summary class="h4">indicativo</summary>
             <p>certeza, fato, realidade</p>
             <p class="h5">presente</p>
@@ -292,7 +317,7 @@
         </details>
       </details>
 
-      <details style="margin-left: 10px">
+      <details>
         <summary class="h2">ADJETIVO</summary>
         <p class="bizu">colocar 'tão' antes</p>
         <p>tão alegre</p>
@@ -300,7 +325,7 @@
         <p>tão cansado</p>
       </details>
 
-      <details style="margin-left: 10px">
+      <details>
         <summary class="h2">PRONOME</summary>
         <p>pode acompanhar ou substituir o nome</p>
         <p class="h3">adjetivo</p>
@@ -310,7 +335,7 @@
         <p class="ex">Seu caderno é azul; o meu é preto.</p>
         <p class="bizu">Substituir -> Substantivo</p>
 
-        <details style="margin-left: 10px">
+        <details>
           <summary class="h3">funções</summary>
           <p class="anotacao">coesao e catafora são coesão referencial</p>
           <p class="h4">anáfora</p>
@@ -337,7 +362,9 @@
           <p class="h4">muito longe</p>
           <p class="bizu">aquilo/aquele/aquela</p>
           <p class="ex">Aquele livro é antigo.</p>
-          <p class="h4">O como pronome demonstrativo</p>
+          <p class="h4">
+            <span><u>O</u></span> como pronome demonstrativo
+          </p>
           <p>
             se der pra trocar O por aquele ou aquilo é pronome demonstrativo
           </p>
@@ -396,7 +423,7 @@
         </details>
       </details>
 
-      <details style="margin-left: 10px">
+      <details>
         <summary class="h2">ARTIGO</summary>
         <p class="h3">definido</p>
         <p>o, a, os, as</p>
@@ -422,12 +449,12 @@
         <p>pela = por + a</p>
       </details>
 
-      <details style="margin-left: 10px">
+      <details>
         <summary class="h2">NUMERAL</summary>
         <p>numero</p>
       </details>
 
-      <details style="margin-left: 10px">
+      <details>
         <summary class="h2">PREPOSIÇÃO</summary>
         <p>a, anti, após</p>
         <p>até, com, contra, de</p>
@@ -438,12 +465,123 @@
         <p>sem, sobre, sob, trás</p>
       </details>
 
-      <details style="margin-left: 10px">
+      <details>
         <summary class="h2">INTERJEIÇÃO</summary>
       </details>
 
-      <details style="margin-left: 10px">
+      <details>
         <summary class="h2">CONJUNÇÃO</summary>
+        <p>
+          termo que liga duas orações ou duas palavras de mesmo valor gramatical
+        </p>
+        <details>
+          <summary class="h3">Conjunções coordenativas</summary>
+          <p>E, nem, não só...mas também, não só... como também.</p>
+          <p class="bizu">3ACE</p>
+          <details>
+            <summary class="h4">Conjunções aditivas</summary>
+            <span>soma, adição de pensamentos</span>
+            <p>E, nem, não só...mas também, não só... como também.</p>
+            <p class="ex">Ele estudou e eu também estudei.</p>
+          </details>
+          <details>
+            <summary class="h4">Conjunções adversativas</summary>
+            <span>contraste, oposição de ideias</span>
+            <p>
+              mas, porém, todavia, contudo, entretanto, no entanto, não obstante
+            </p>
+            <p class="ex">Ele estudou, mas eu não estudei.</p>
+          </details>
+          <details>
+            <summary class="h4">Conjunções alternativas</summary>
+            <span>escolha de pensamentos, alternância de ideias</span>
+            <p>ou...ou, ora...ora, quer...quer, seja...seja</p>
+            <p class="ex">Ou ele estuda ou ele não estuda.</p>
+          </details>
+          <details>
+            <summary class="h4">Conjunções conclusivas</summary>
+            <span>conclusão de ideias</span>
+            <p>logo, portanto, assim, então</p>
+            <p class="ex">Ele estudou, logo ele passou.</p>
+          </details>
+          <details>
+            <summary class="h4">Conjunções explicativas</summary>
+            <span>explicação de ideias, razão, motivo</span>
+            <p>que, porque, assim, porquanto</p>
+            <p class="ex">Ele estudou porque queria passar.</p>
+          </details>
+        </details>
+
+        <details>
+          <summary class="h3">Conjunções subordinativas</summary>
+          <p>servem para ligar orações dependentes uma da outra</p>
+          <p class="bizu">6CIFTP</p>
+          <details>
+            <summary class="h4">Conjunções integrantes</summary>
+            <span>orações subordinadas com função substantiva</span>
+            <p>que, se</p>
+            <p class="ex">Quero que você estude.</p>
+          </details>
+          <details>
+            <summary class="h4">Conjunções causais</summary>
+            <p>porque, já que, pois, porquanto</p>
+            <p class="ex">Ele estudou porque queria passar.</p>
+          </details>
+          <details>
+            <summary class="h4">Conjunções comparativas</summary>
+            <span>orações subordinadas que dão ideia de comparação</span>
+            <p>como, do que, que</p>
+            <p class="ex">Ele chora como um menino.</p>
+          </details>
+          <details>
+            <summary class="h4">Conjunções concessivas</summary>
+            <span>orações subordinadas que exprimem fato contrário</span>  
+            <p>
+              embora, apesar de, ainda que, mesmo que, por mais que, conquanto,
+              posto que, não obstante, malgrado embora tenha
+            </p>
+            <p class="ex">Embora tenha estudado, ele não passou.</p>
+          </details>
+          <details>
+            <summary class="h4">Conjunções condicionais</summary>
+            <span>orações subordinadas que exprimem hipótese</span>
+            <p>se, caso, contanto que, desde que, a menos que</p>
+            <p class="ex">Se ele estudar, ele passará.</p>
+          </details>
+          <details>
+            <summary class="h4">Conjunções conformativas</summary>
+            <span>orações subordinadas que exprimem acordo</span>
+            <p>conforme, como, segundo, consoante</p>
+            <p class="ex">Fiz tudo conforme o combinado.</p>
+          </details>
+          <details>
+            <summary class="h4">Conjunções consecutivas</summary>
+            <span>orações subordinadas que exprimem a consequência</span>
+            <p>de forma que, de modo que, de maneira que, que</p>
+            <p class="ex">Ele estudou tanto que passou.</p>
+          </details>
+          <details>
+            <summary class="h4">Conjunções temporais</summary>
+            <span>orações subordinadas que exprimem tempo</span>
+            <p>quando, enquanto, depois que, antes que, desde que</p>
+            <p class="ex">Quando ele estudou, ele passou.</p>
+          </details>
+          <details>
+            <summary class="h4">Conjunções finais</summary>
+            <span>orações subordinadas que exprimem finalidade</span>
+            <p>para que, a fim de que, porque</p>
+            <p class="ex">Ele estudou para que passasse.</p>
+          </details>
+          <details>
+            <summary class="h4">Conjunções proporcionais</summary>
+            <span
+              >orações subordinadas que exprimem concomitancia,
+              simultaneidade</span
+            >
+            <p>à medida que, ao passo que, quanto mais...mais</p>
+            <p class="ex">À medida que ele estudava, ele passava.</p>
+          </details>
+        </details>
 
         <details>
           <summary class="h4">como</summary>
@@ -462,15 +600,22 @@
         </details>
       </details>
 
-      <details style="margin-left: 10px">
+      <details>
         <summary class="h2">ADVÉRBIO</summary>
       </details>
+
+      <details>
+        <summary class="h2">USO DOS PORQUES</summary>
+        <span>Por que tem acento? </span>
+        <p class="anotacao">pergunta</p>
+        <span>Porque sim. </span>
+        <p class="anotacao">resposta</p>
+        <span>Mas por quê? </span>
+        <p class="anotacao">final de frase</p>
+        <span>O porquê eu não sei.</span>
+        <p class="anotacao">substantivo</p>
+      </details>
     </details>
-
-    conectivo concessivo sentido contrario embora, apesar de, ainda que, mesmo
-    que, por mais que, conquanto, posto que, não obstante, malgrado embora tenha
-    chegado tarde, ele entrou
-
     <br />
     <p>---------------TAMANHO DA FONTE---------------------</p>
     <p class="h1">xx-larger</p>

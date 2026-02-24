@@ -4,11 +4,17 @@
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     background-color: lightgrey;
 }
+body {
+  overflow-wrap: break-word;
+}
 span {
   color: red;
 }
 u {
   margin: 0px;
+}
+details {
+  margin-left: 10px;
 }
 .bizu {
   font-weight: bold;
@@ -19,7 +25,11 @@ u {
   color: green;
 }
 .anotacao {
-  color: yellow;
+  color: chocolate;
+}
+.stf {
+  font-weight: bold;
+  color: royalblue;
 }
 .h1 {
   font-size: 25px;
